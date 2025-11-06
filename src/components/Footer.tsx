@@ -59,7 +59,7 @@ export function Footer({ onNavigate }: FooterProps) {
           <div className="lg:col-span-1">
             <button 
               onClick={() => handleNavClick("home")}
-              className="flex items-center gap-2 mb-4"
+              className="flex items-center gap-2 mb-4 hover:opacity-80 transition-opacity"
             >
               <Rocket className="w-8 h-8 text-cyan-400" />
               <div>
@@ -71,14 +71,14 @@ export function Footer({ onNavigate }: FooterProps) {
               우주의 모든 지식을 한 곳에서, 누구나 쉽게
             </p>
             <div className="flex gap-3">
-              <a href="#" className="p-2 bg-white/5 rounded-lg">
-                <Mail className="w-5 h-5 text-gray-400" />
+              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-cyan-500/20 transition-colors">
+                <Mail className="w-5 h-5 text-gray-400 hover:text-cyan-400" />
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-lg">
-                <Github className="w-5 h-5 text-gray-400" />
+              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-cyan-500/20 transition-colors">
+                <Github className="w-5 h-5 text-gray-400 hover:text-cyan-400" />
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-lg">
-                <Twitter className="w-5 h-5 text-gray-400" />
+              <a href="#" className="p-2 bg-white/5 rounded-lg hover:bg-cyan-500/20 transition-colors">
+                <Twitter className="w-5 h-5 text-gray-400 hover:text-cyan-400" />
               </a>
             </div>
           </div>
@@ -92,7 +92,7 @@ export function Footer({ onNavigate }: FooterProps) {
                   <li key={link.label}>
                     <button 
                       onClick={() => handleNavClick(link.page)}
-                      className="text-sm text-gray-400"
+                      className="text-sm text-gray-400 hover:text-cyan-400 transition-colors"
                     >
                       {link.label}
                     </button>
