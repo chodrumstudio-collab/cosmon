@@ -10,6 +10,9 @@ import { ChallengesPage } from "./pages/ChallengesPage";
 import { ScienceStoriesPage } from "./pages/ScienceStoriesPage";
 import { LearningCenterPage } from "./pages/LearningCenterPage";
 import { CommunityPage } from "./pages/CommunityPage";
+import { PrivacyPolicyPage } from "./pages/PrivacyPolicyPage";
+import { TermsOfServicePage } from "./pages/TermsOfServicePage";
+import { CookiePolicyPage } from "./pages/CookiePolicyPage";
 import { Footer } from "./components/Footer";
 import ParticleBackground from "./components/ParticleBackground";
 
@@ -23,7 +26,10 @@ export type PageType =
   | "challenges"
   | "science-stories"
   | "learning-center"
-  | "community";
+  | "community"
+  | "privacy-policy"
+  | "terms-of-service"
+  | "cookie-policy";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageType>("home");
@@ -50,6 +56,12 @@ export default function App() {
         return <LearningCenterPage />;
       case "community":
         return <CommunityPage />;
+      case "privacy-policy":
+        return <PrivacyPolicyPage />;
+      case "terms-of-service":
+        return <TermsOfServicePage />;
+      case "cookie-policy":
+        return <CookiePolicyPage />;
       default:
         return <HomePage onNavigate={setCurrentPage} />;
     }

@@ -110,9 +110,24 @@ export function Footer({ onNavigate }: FooterProps) {
               © 2025 COSMOS. All rights reserved. Made with ❤️ for space enthusiasts.
             </p>
             <div className="flex gap-6 text-sm text-gray-500">
-              <a href="#" className="hover:text-cyan-400 transition-colors">개인정보처리방침</a>
-              <a href="#" className="hover:text-cyan-400 transition-colors">이용약관</a>
-              <a href="#" className="hover:text-cyan-400 transition-colors">쿠키 정책</a>
+              <button 
+                onClick={() => handleNavClick("privacy-policy")}
+                className="hover:text-cyan-400 transition-colors"
+              >
+                개인정보처리방침
+              </button>
+              <button 
+                onClick={() => handleNavClick("terms-of-service")}
+                className="hover:text-cyan-400 transition-colors"
+              >
+                이용약관
+              </button>
+              <button 
+                onClick={() => handleNavClick("cookie-policy")}
+                className="hover:text-cyan-400 transition-colors"
+              >
+                쿠키 정책
+              </button>
             </div>
           </div>
         </div>
