@@ -51,7 +51,7 @@ export function Footer({ onNavigate }: FooterProps) {
   };
 
   return (
-    <footer className="bg-black border-t border-cyan-500/20">
+    <footer className="bg-black border-t border-cyan-500/20 relative z-10" style={{ opacity: 1 }}>
       <div className="container mx-auto px-4 py-12">
         {/* Top Section */}
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
