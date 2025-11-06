@@ -13,6 +13,10 @@ import { CommunityPage } from "./pages/CommunityPage";
 import { PrivacyPolicyPage } from "./pages/PrivacyPolicyPage";
 import { TermsOfServicePage } from "./pages/TermsOfServicePage";
 import { CookiePolicyPage } from "./pages/CookiePolicyPage";
+import { AboutPage } from "./pages/AboutPage";
+import { TeamPage } from "./pages/TeamPage";
+import { PartnershipPage } from "./pages/PartnershipPage";
+import { ContactPage } from "./pages/ContactPage";
 import { Footer } from "./components/Footer";
 import ParticleBackground from "./components/ParticleBackground";
 
@@ -29,7 +33,11 @@ export type PageType =
   | "community"
   | "privacy-policy"
   | "terms-of-service"
-  | "cookie-policy";
+  | "cookie-policy"
+  | "about"
+  | "team"
+  | "partnership"
+  | "contact";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageType>("home");
@@ -62,6 +70,14 @@ export default function App() {
         return <TermsOfServicePage />;
       case "cookie-policy":
         return <CookiePolicyPage />;
+      case "about":
+        return <AboutPage />;
+      case "team":
+        return <TeamPage />;
+      case "partnership":
+        return <PartnershipPage />;
+      case "contact":
+        return <ContactPage />;
       default:
         return <HomePage onNavigate={setCurrentPage} />;
     }

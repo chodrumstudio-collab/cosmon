@@ -37,10 +37,10 @@ export function Footer({ onNavigate }: FooterProps) {
     {
       title: "정보",
       links: [
-        { label: "소개", page: "home" },
-        { label: "팀", page: "home" },
-        { label: "파트너십", page: "home" },
-        { label: "문의하기", page: "home" }
+        { label: "소개", page: "about" },
+        { label: "팀", page: "team" },
+        { label: "파트너십", page: "partnership" },
+        { label: "문의하기", page: "contact" }
       ]
     }
   ];
