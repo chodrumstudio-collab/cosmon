@@ -14,7 +14,7 @@ export function AboutPage() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-12">
           {/* Mission */}
           <Card className="p-6 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-500/30">
             <div className="flex items-start gap-4">
