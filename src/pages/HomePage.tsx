@@ -142,7 +142,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="text-center mb-16">
             <h2 className="text-white mb-4">탐험할 우주</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              빅뱅부터 현대 우주 산업까지, 우주에 대한 모든 지식을 담았습니다
+              빅뱅부터 현대 우주 산업까지,
+              <br />
+              우주에 대한 모든 지식을 담았습니다
             </p>
           </div>
 
